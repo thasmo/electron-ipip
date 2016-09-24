@@ -1,0 +1,25 @@
+{
+  "name": "@thasmo/ipip",
+  "productName": "ipip",
+  "description": "Get your public IP address with a click.",
+  "version": "0.1.0",
+  "keywords": [],
+  "license": "MIT",
+  "repository": "thasmo/electron-ipip",
+  "author": {
+    "name": "Thomas Deinhamer",
+    "email": "thasmo@gmail.com",
+    "url": "https://thasmo.com/"
+  },
+  "dependencies": {
+    "public-ip": "2.0.1"
+  },
+  "devDependencies": {
+    "electron": "1.4.1",
+    "electron-packager": "8.0.0"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/electron .",
+    "build:windows": "./node_modules/.bin/electron-packager . --platform=win32 --arch=x64 --icon=static/app.ico --out=dist --overwrite"
+  }
+}
